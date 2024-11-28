@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BB8353A52CF905FF00972F90 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BB8353A42CF905FF00972F90 /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BB432E7F2CF8E88F00E73630 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +31,25 @@
 		BB432E6D2CF8E88D00E73630 /* TopTenMarketCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopTenMarketCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB432E7E2CF8E88F00E73630 /* TopTenMarketCapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopTenMarketCapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB432E882CF8E88F00E73630 /* TopTenMarketCapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopTenMarketCapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8353A42CF905FF00972F90 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BB8353A72CF914C100972F90 /* Exceptions for "TopTenMarketCap" folder in "TopTenMarketCap" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BB432E6C2CF8E88C00E73630 /* TopTenMarketCap */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BB432E6F2CF8E88D00E73630 /* TopTenMarketCap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BB8353A72CF914C100972F90 /* Exceptions for "TopTenMarketCap" folder in "TopTenMarketCap" target */,
+			);
 			path = TopTenMarketCap;
 			sourceTree = "<group>";
 		};
@@ -75,6 +93,7 @@
 		BB432E642CF8E88C00E73630 = {
 			isa = PBXGroup;
 			children = (
+				BB8353A42CF905FF00972F90 /* Localizable.xcstrings */,
 				BB432E6F2CF8E88D00E73630 /* TopTenMarketCap */,
 				BB432E812CF8E88F00E73630 /* TopTenMarketCapTests */,
 				BB432E8B2CF8E88F00E73630 /* TopTenMarketCapUITests */,
@@ -192,6 +211,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = BB432E642CF8E88C00E73630;
 			minimizedProjectReferenceProxies = 1;
@@ -212,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8353A52CF905FF00972F90 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +347,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -380,6 +402,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -396,6 +419,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TopTenMarketCap/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -435,6 +459,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TopTenMarketCap/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
